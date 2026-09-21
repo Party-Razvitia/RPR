@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html class="light" lang="ru" translate="no">
+<head>
+    <script nonce="732e0a311ce7cf79cf1c3072be07b844">document.documentElement.classList.add('js-enabled');</script>
+    <title>Состав партии</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="icon" href="favicon.ico@v=12" type="image/x-icon" />
+    <meta name="description" content="Официальный сайт игровой политической партии РПР на серверах Live RP. Программа, цели и состав партии." />
+    <meta name="keywords" content="РПР, партия, контроль, порядок, политика, Россия, программа партии" />
+    
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="РПР - Официальный сайт" />
+    <meta property="og:description" content="Официальный сайт игровой политической партии РПР на серверах Live RP. Программа, цели и состав партии." />
+    <meta property="og:url" content="https://ldps.ru/" />
+    <meta property="og:site_name" content="РПР" />
+    
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="РПР - Официальный сайт" />
+    <meta name="twitter:description" content="Официальный сайт игровой политической партии РПР на серверах Live RP. Программа, цели и состав партии." />
+    
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="assets/fonts/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/app.css@v=27.css" />
+    <script nonce="732e0a311ce7cf79cf1c3072be07b844" src="assets/js/app.js@v=27" defer></script>
+    <script nonce="732e0a311ce7cf79cf1c3072be07b844" src="assets/js/modals.js@v=27" defer></script>
+    <script nonce="732e0a311ce7cf79cf1c3072be07b844" src="assets/js/nav.js@v=27" defer></script>
+</head>
+<body class="bg-surface text-on-surface flex flex-col min-h-screen " data-spa="1" data-base-url="">
+
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl">
+    <div class="flex justify-between items-center px-6 md:px-8 h-20 max-w-7xl mx-auto">
+        <a class="flex items-center gap-3 cursor-pointer" href="index.html" data-nav-path="/">
+            <span class="text-2xl font-bold tracking-tight text-slate-900">РПР</span>
+            <span class="hidden lg:block text-[10px] font-semibold text-slate-500 uppercase tracking-widest border-l border-slate-300 pl-3 leading-tight">Если мы —<br/>То изменения</span>
+        </a>
+        
+        <div class="hidden md:flex space-x-6 items-center">
+            <a class="font-['Inter'] font-semibold text-[15px] text-slate-500 hover:text-slate-900 transition-colors" href="index.html" data-nav-path="/">Главная</a>
+            <a class="font-['Inter'] font-semibold text-[15px] text-slate-500 hover:text-slate-900 transition-colors" href="about.html" data-nav-path="/about">О партии</a>
+            <a class="font-['Inter'] font-semibold text-[15px] text-slate-900" href="members.html" data-nav-path="/members">Состав</a>
+            <a class="font-['Inter'] font-semibold text-[15px] text-slate-500 hover:text-slate-900 transition-colors" href="join.html" data-nav-path="/join">Вступить</a>
+        </div>
+        
+        <div class="flex items-center space-x-4 md:space-x-6">
+            
+            <form action="https://ldps.ru/search" method="GET" class="hidden lg:flex items-center self-center bg-[#f0f4f6] pl-5 pr-6 py-2.5 rounded-full">
+                <span class="material-symbols-outlined text-[#7c8a90] text-[20px] select-none">search</span>
+                <input name="q" class="bg-transparent border-none focus:ring-transparent focus:outline-none focus:ring-0 focus:border-none focus:shadow-none text-[15px] text-on-surface placeholder-[#7c8a90] w-28 ml-2.5 p-0 outline-none leading-none" placeholder="Поиск" type="text" autocomplete="off" value=""/>
+            </form>
+            
+                            <a href="login.html" class="nav-auth-btn bg-[#3557bc] text-white px-6 py-2 rounded-xl font-bold inline-flex items-center self-center" data-no-spa>Вход</a>
+                        
+            <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-2xl bg-surface-container" aria-label="Toggle menu">
+                <span class="material-symbols-outlined text-on-surface">menu</span>
+            </button>
+        </div>
+    </div>
+    
+    <div id="mobile-menu" class="md:hidden absolute top-20 left-0 w-full bg-white border-b border-slate-200 shadow-2xl transition-all duration-300 transform -translate-y-4 opacity-0 invisible z-40 max-h-[calc(100vh-5rem)] overflow-y-auto">
+        <div class="flex flex-col p-6 space-y-2">
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="index.html" data-nav-path="/">Главная</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="about.html" data-nav-path="/about">О партии</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-900" href="members.html" data-nav-path="/members">Состав</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="join.html" data-nav-path="/join">Вступить</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="deputy-reserve.html" data-nav-path="/deputy-reserve">Депутатский резерв</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="bills.html" data-nav-path="/bills">Законопроекты</a>
+            <a class="font-bold text-lg py-3 px-3 rounded-xl hover:bg-slate-50 transition-colors text-slate-500 hover:text-slate-900 transition-colors" href="docs.html" data-nav-path="/docs">Документы</a>
+            
+            <div class="pt-4 mt-2 border-t border-slate-100 flex flex-col gap-3">
+                                    <a href="login.html" class="w-full bg-[#3557bc] hover:bg-[#274baf] text-white py-3.5 rounded-2xl font-bold transition-all text-center block text-base shadow-sm" data-no-spa>Авторизация</a>
+                            </div>
+        </div>
+    </div>
+    <div class="bg-slate-100 h-[1px]"></div>
+</nav>
+
+<div class="h-20"></div>
+<div class="bg-amber-50 border-b border-amber-200/60 py-3.5 px-6 md:px-8 text-center text-amber-800 text-[13px] font-semibold shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-center">
+        <span>Данный сайт не является реальным политическим ресурсом и создан исключительно для игрового проекта LIVE RP.</span>
+    </div>
+</div>
+<div id="page-swap">
+
+<main id="members-page-main" class="max-w-7xl mx-auto px-6 md:px-8 py-12 flex-grow w-full">
+    <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-8 text-center leading-tight">
+        Состав партии
+    </h1>
+
+    <div class="space-y-16">
+                    <div>
+                <h2 class="text-xl font-bold text-slate-800 mb-8 text-center tracking-wider uppercase">
+                    Руководство                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="9"
+                             data-name="Старк Алексей Владимирович"
+                             data-role="Председатель партии"
+                             data-age="35"
+                             data-passport="---"
+                             data-discord="clamsy0101"
+                             data-description=""
+                             data-avatar="https://cdn.discordapp.com/attachments/1532034374625788074/1551348886403293305/content.png?ex=6ab1a5bd&is=6ab0543d&hm=7b623b46d14335bdc10bee0533c44efc6def661bfb1f186d6e123b12fc304c76&">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-100">
+                                                                    <img src="https://cdn.discordapp.com/attachments/1532034374625788074/1551348886403293305/content.png?ex=6ab1a5bd&is=6ab0543d&hm=7b623b46d14335bdc10bee0533c44efc6def661bfb1f186d6e123b12fc304c76&" alt="Старк Алексей Владимирович" loading="lazy" decoding="async" class="img-blur-load w-full h-full object-cover" onload="this.classList.add('loaded')" referrerpolicy="no-referrer">
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Старк Алексей Владимирович</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Председатель партии                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="7"
+                             data-name="Старк Алексей Владимирович"
+                             data-role="Кандидат в Губернаторы"
+                             data-age="35"
+                             data-passport="---"
+                             data-discord="clamsy0101"
+                             data-description=""
+                             data-avatar="https://cdn.discordapp.com/attachments/1532034374625788074/1551348886403293305/content.png?ex=6ab1a5bd&is=6ab0543d&hm=7b623b46d14335bdc10bee0533c44efc6def661bfb1f186d6e123b12fc304c76&">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-100">
+                                                                    <img src="https://cdn.discordapp.com/attachments/1532034374625788074/1551348886403293305/content.png?ex=6ab1a5bd&is=6ab0543d&hm=7b623b46d14335bdc10bee0533c44efc6def661bfb1f186d6e123b12fc304c76&" alt="Старк Алексей Владимирович" loading="lazy" decoding="async" class="img-blur-load w-full h-full object-cover" onload="this.classList.add('loaded')" referrerpolicy="no-referrer">
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Старк Алексей Владимирович</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Кандидат в Губернаторы                                </p>
+                                                                    <p class="text-xs text-slate-500 leading-relaxed mt-2 overflow-hidden text-ellipsis line-clamp-3 font-normal">
+                                        Гражданин Российской Федерации                                    </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="6"
+                             data-name="---"
+                             data-role="Руководитель Высшего Совета"
+                             data-age="---"
+                             data-passport="---"
+                             data-discord="---"
+                             data-description="-"
+                             data-avatar="---">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-100">
+                                                                    <img src="ссылка" alt="Скоро" loading="lazy" decoding="async" class="img-blur-load w-full h-full object-cover" onload="this.classList.add('loaded')" referrerpolicy="no-referrer">
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">ФИО</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Руководитель Высшего Совета                                </p>
+                                                                    <p class="text-xs text-slate-500 leading-relaxed mt-2 overflow-hidden text-ellipsis line-clamp-3 font-normal">
+                                        Гражданин Российской Федерации                                    </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="80"
+                             data-name="Лионов Сергей Сергеевич"
+                             data-role="Руководитель Организационного Комитета"
+                             data-age="30"
+                             data-passport="---"
+                             data-discord="uchihaglitch31"
+                             data-description=""
+                             data-avatar="https://cdn.discordapp.com/attachments/1532034374625788074/1551544213546606623/content.png?ex=6ab25ba6&is=6ab10a26&hm=43988d8453b31d42c976621ca13006184ea0cd5edab6a3fe32a197f1c5e88bfb&">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-100">
+                                                                    <img src="https://cdn.discordapp.com/attachments/1532034374625788074/1551544213546606623/content.png?ex=6ab25ba6&is=6ab10a26&hm=43988d8453b31d42c976621ca13006184ea0cd5edab6a3fe32a197f1c5e88bfb&" alt="Лионов Сергей Сергеевич" loading="lazy" decoding="async" class="img-blur-load w-full h-full object-cover" onload="this.classList.add('loaded')" referrerpolicy="no-referrer">
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Лионов Сергей Сергеевич</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Руководитель Организационного Комитета                                </p>
+                                                                    <p class="text-xs text-slate-500 leading-relaxed mt-2 overflow-hidden text-ellipsis line-clamp-3 font-normal">
+                                        Действующий Генерал-Майор УФСВНГ                                    </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="20"
+                             data-name="Филатов Роман Александрович"
+                             data-role="Председатель Центральной дисциплинарной комиссии"
+                             data-age="--"
+                             data-passport="---"
+                             data-discord="roma23032000"
+                             data-description=""
+                             data-avatar="ссылка">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-100">
+                                                                    <img src="ссылка" alt="ФИО" loading="lazy" decoding="async" class="img-blur-load w-full h-full object-cover" onload="this.classList.add('loaded')" referrerpolicy="no-referrer">
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Филатов Роман Александрович</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Председатель Центральной дисциплинарной комиссии                                </p>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                    <div>
+                <h2 class="text-xl font-bold text-slate-800 mb-8 text-center tracking-wider uppercase">
+                    Депутаты                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="74"
+                             data-name="Александров Александр Александрович"
+                             data-role="Председатель Законодательного Собрания"
+                             data-age="26"
+                             data-passport="---"
+                             data-discord="matteo_666"
+                             data-description=""
+                             data-avatar="https://cdn.discordapp.com/attachments/1532034374625788074/1551545817570086993/content.png?ex=6ab25d25&is=6ab10ba5&hm=e7701eac3a2977827e5bc0dafbd6292e3e75439e055a6c3e5152f7b0f6e75b27&">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-100">
+                                                                    <img src="https://cdn.discordapp.com/attachments/1532034374625788074/1551545817570086993/content.png?ex=6ab25d25&is=6ab10ba5&hm=e7701eac3a2977827e5bc0dafbd6292e3e75439e055a6c3e5152f7b0f6e75b27&" alt="Александров Александр Александрович" loading="lazy" decoding="async" class="img-blur-load w-full h-full object-cover" onload="this.classList.add('loaded')" referrerpolicy="no-referrer">
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Александров Александр Александрович</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Председатель Законодательного Собрания                                </p>
+                                                                    <p class="text-xs text-slate-500 leading-relaxed mt-2 overflow-hidden text-ellipsis line-clamp-3 font-normal">
+                                        Председатель Законодательного Собрания Центрального федерального округа I созыва                                    </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="76"
+                             data-name="ФИО"
+                             data-role="Заместитель Председателя Законодательного Собрания"
+                             data-age="34"
+                             data-passport="---"
+                             data-discord="---"
+                             data-description=""
+                             data-avatar="ссылка">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">ФИО</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Заместитель Председателя Законодательного Собрания                                </p>
+                                                                    <p class="text-xs text-slate-500 leading-relaxed mt-2 overflow-hidden text-ellipsis line-clamp-3 font-normal">
+                                        Заместитель Председателя Законодательного Собрания Центрального федерального округа I созыва                                    </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="64"
+                             data-name="Тигран Кречет"
+                             data-role="Депутат"
+                             data-age="--"
+                             data-passport="791072"
+                             data-discord="tigran096387"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Тигран Кречет</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="70"
+                             data-name="Игорь Сопрано"
+                             data-role="Депутат"
+                             data-age="--"
+                             data-passport="--"
+                             data-discord="song_65"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Игорь Сопрано</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="21"
+                             data-name="Виктор Кузьмин"
+                             data-role="Депутат"
+                             data-age="--"
+                             data-passport="---"
+                             data-discord="skitlle_29win"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Виктор Кузьмин</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="32"
+                             data-name="Иван Родя"
+                             data-role="Депутат"
+                             data-age="--"
+                             data-passport="--"
+                             data-discord="fc_spartak"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Иван Родя</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="71"
+                             data-name="Андрей Сопрано"
+                             data-role="Депутат"
+                             data-age="--"
+                             data-passport="--"
+                             data-discord="gineral_421"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Андрей Сопрано</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="68"
+                             data-name="Роман Филатов"
+                             data-role="Депутат"
+                             data-age="--"
+                             data-passport="---"
+                             data-discord="roma23032000"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Роман Филатов</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="60"
+                             data-name="Марк Косицкий"
+                             data-role="Депутат"
+                             data-age="--"
+                             data-passport="--"
+                             data-discord="lm.slava"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Марк Косицкий</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="34"
+                             data-name="Скоро"
+                             data-role="Депутат"
+                             data-age="—"
+                             data-passport="---"
+                             data-discord="pan.gus"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Скоро</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="72"
+                             data-name="Скоро"
+                             data-role="Депутат"
+                             data-age="--"
+                             data-passport="--"
+                             data-discord="--"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Скоро</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="36"
+                             data-name="Скоро"
+                             data-role="Депутат"
+                             data-age="—"
+                             data-passport="---"
+                             data-discord="---"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Скоро</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="27"
+                             data-name="Скоро"
+                             data-role="Депутат"
+                             data-age="—"
+                             data-passport="---"
+                             data-discord="---"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Скоро</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="19"
+                             data-name="Скоро"
+                             data-role="Депутат"
+                             data-age="—"
+                             data-passport="---"
+                             data-discord="overcon"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Скоро</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                            <div class="member-card group flex bg-[#f8f9fa] border border-slate-200/50 hover:border-slate-300 rounded-3xl overflow-hidden hover:shadow-md transition-shadow transition-colors duration-200 cursor-pointer"
+                             data-id="58"
+                             data-name="Скоро"
+                             data-role="Депутат"
+                             data-age="—"
+                             data-passport="---"
+                             data-discord="---"
+                             data-description=""
+                             data-avatar="/uploads/default_avatar.svg">
+                            
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>
+                                                            </div>
+                            
+                            <div class="px-5 py-4 flex flex-col justify-start min-w-0 flex-grow">
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug truncate group-hover:text-[#3557bc] transition-colors">Скоро</h3>
+                                <p class="text-xs font-bold text-[#3557bc] leading-relaxed overflow-hidden text-ellipsis line-clamp-1 mt-0.5">
+                                    Депутат                                </p>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                    <div>
+                
+                            <div class="w-[130px] sm:w-[150px] h-[170px] shrink-0 overflow-hidden border-r border-slate-200/40 flex items-center justify-center bg-slate-200">
+                                                                    <span class="material-symbols-outlined text-slate-400" style="font-size:48px;">person</span>        
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+        
+            </div>
+    
+    <div id="member-modal" class="site-modal opacity-0 pointer-events-none">
+        <div class="site-modal-panel max-w-3xl p-8 md:p-10 flex flex-col gap-6">
+            
+            <button id="close-modal-btn" class="site-modal-close" aria-label="Закрыть">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            
+            
+            <div class="border-b border-slate-100 pb-4 pr-10">
+                <h2 id="modal-name" class="text-2xl md:text-3xl font-bold text-slate-900 leading-tight"></h2>
+                <p id="modal-role" class="text-sm font-bold text-[#3557bc] uppercase tracking-wider mt-1"></p>
+            </div>
+            
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                
+                <div class="md:col-span-4 flex justify-center">
+                    <div id="modal-avatar-wrap" class="w-48 h-[240px] rounded-3xl overflow-hidden border-2 border-slate-200/80 shadow-sm bg-slate-200 shrink-0 flex items-center justify-center">
+                        <img id="modal-avatar" src="members.html" alt="" class="w-full h-full object-cover" style="display: none;">
+                        <span id="modal-avatar-icon" class="material-symbols-outlined text-slate-400" style="font-size: 48px; display: inline-block;">person</span>
+                    </div>
+                </div>
+                
+                
+                <div class="md:col-span-8 space-y-6">
+                    
+                    <div class="grid grid-cols-3 gap-4 bg-transparent p-5 rounded-2xl border border-slate-200/60">
+                        <div>
+                            <span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Возраст</span>
+                            <span id="modal-age" class="block font-bold text-slate-800 text-sm"></span>
+                        </div>
+                        <div>
+                            <span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Паспорт</span>
+                            <span id="modal-passport" class="block font-bold text-slate-800 text-sm"></span>
+                        </div>
+                        <div>
+                            <span class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Discord</span>
+                            <span id="modal-discord" class="block font-bold text-slate-800 text-sm truncate" title=""></span>
+                        </div>
+                    </div>
+                    
+                    
+                    <div>
+                        <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Биография</span>
+                        <div class="bg-transparent p-5 rounded-2xl border border-slate-200/60">
+                            <p id="modal-description" class="text-slate-600 text-[14px] leading-relaxed whitespace-pre-wrap max-h-[140px] overflow-y-auto pr-1 font-medium"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script nonce="732e0a311ce7cf79cf1c3072be07b844">
+(function() {
+    const modal = document.getElementById('member-modal');
+    if (!modal) return;
+    if (window.moveModalsToBody) window.moveModalsToBody();
+    const fields = {
+        name: document.getElementById('modal-name'),
+        role: document.getElementById('modal-role'),
+        age: document.getElementById('modal-age'),
+        passport: document.getElementById('modal-passport'),
+        discord: document.getElementById('modal-discord'),
+        description: document.getElementById('modal-description'),
+        avatar: document.getElementById('modal-avatar'),
+        avatarIcon: document.getElementById('modal-avatar-icon'),
+        avatarWrap: document.getElementById('modal-avatar-wrap')
+    };
+
+    var DEFAULT_AVATAR = 'uploads/default_avatar.svg';
+
+    function parseBBCodeSafe(text) {
+        if (typeof window.parseBBCodeJS === 'function') {
+            return window.parseBBCodeJS(text);
+        }
+        return text ? text.replace(/\n/g, '<br>') : '';
+    }
+
+    function openModal(data) {
+        if (!data) return;
+        const name = (data.name && data.name.trim()) ? data.name.trim() : 'Без имени';
+        const role = (data.role && data.role.trim()) ? data.role.trim() : 'Участник';
+        const age = (data.age && data.age.trim() && data.age.trim() !== '—') ? data.age.trim() : '—';
+        const passport = (data.passport && data.passport.trim() && data.passport.trim() !== '—') ? data.passport.trim() : '—';
+        const discord = (data.discord && data.discord.trim() && data.discord.trim() !== '—') ? data.discord.trim() : '—';
+        const description = (data.description && data.description.trim()) ? data.description.trim() : 'Биография не указана.';
+
+        if (fields.name) fields.name.textContent = name;
+        if (fields.role) fields.role.textContent = role;
+        if (fields.age) fields.age.textContent = age;
+        if (fields.passport) fields.passport.textContent = passport;
+        if (fields.discord) {
+            fields.discord.textContent = discord;
+            fields.discord.title = discord;
+        }
+        if (fields.description) fields.description.innerHTML = parseBBCodeSafe(description);
+
+        var hasAvatar = data.avatar && !data.avatar.endsWith(DEFAULT_AVATAR);
+        if (hasAvatar && fields.avatar) {
+            fields.avatar.src = data.avatar;
+            fields.avatar.alt = name;
+            fields.avatar.style.display = 'block';
+            if (fields.avatarIcon) fields.avatarIcon.style.display = 'none';
+            if (fields.avatarWrap) fields.avatarWrap.style.backgroundColor = '#f1f5f9';
+        } else {
+            if (fields.avatar) {
+                fields.avatar.src = '';
+                fields.avatar.style.display = 'none';
+            }
+            if (fields.avatarIcon) fields.avatarIcon.style.display = 'inline-block';
+            if (fields.avatarWrap) fields.avatarWrap.style.backgroundColor = '#e2e8f0';
+        }
+
+        if (window.openSiteModal) window.openSiteModal(modal);
+        else {
+            modal.classList.add('is-open');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        if (data.id) {
+            var newUrl = window.location.pathname + '?member=' + data.id;
+            window.history.replaceState({ memberId: data.id }, '', newUrl);
+        }
+    }
+
+    function closeModal() {
+        if (window.closeSiteModal) window.closeSiteModal(modal);
+        else {
+            modal.classList.remove('is-open');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+        if (window.unlockScroll) window.unlockScroll();
+        if (window.location.search.includes('member=')) {
+            window.history.replaceState(null, '', window.location.pathname);
+        }
+    }
+
+    document.addEventListener('click', function(e) {
+        var card = e.target.closest('.member-card');
+        if (card) {
+            e.preventDefault();
+            openModal(card.dataset);
+            return;
+        }
+        if (modal && (e.target === modal || e.target.closest('#close-modal-btn'))) {
+            closeModal();
+        }
+    });
+
+    function checkInitialUrl() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var memberId = urlParams.get('member');
+        if (memberId) {
+            var targetCard = document.querySelector('.member-card[data-id="' + memberId + '"]');
+            if (targetCard) {
+                openModal(targetCard.dataset);
+            }
+        }
+    }
+    checkInitialUrl();
+})();
+</script>
+</main>
+
+</div>
+
+<footer class="w-full py-12 border-t border-slate-200 bg-slate-50 mt-auto">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-y-8 gap-x-4 px-8 max-w-7xl mx-auto">
+        
+        <div class="col-span-1 md:col-span-5">
+            <div class="text-lg font-bold text-slate-900 mb-2">РПР</div>
+            <div class="text-xs font-bold text-[#3557bc] mb-4 uppercase tracking-wider">«Если мы — То изменения»</div>
+            <p class="font-['Inter'] text-sm text-slate-500 leading-relaxed pr-8">
+                Российская Партия Развития. Мы работаем для людей и ради будущего нашей великой родины.
+            </p>
+        </div>
+        
+        
+        <div class="col-span-1 md:col-span-4 grid grid-cols-2 gap-8">
+            
+            <div>
+                <h4 class="text-sm font-bold text-slate-900 mb-5">Информация</h4>
+                <ul class="space-y-4">
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="history.html">История</a></li>
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="charter.html">Устав</a></li>
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="program.html">Программа</a></li>
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="bills.html">Законопроекты</a></li>
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="contacts.html">Контакты</a></li>
+                    <li><a class="font-['Inter'] text-sm text-slate-500 hover:text-[#3557bc] transition-colors no-underline block" href="docs.html">Документация</a></li>
+                </ul>
+            </div>
+            
+            
+            <div>
+                <h4 class="text-sm font-bold text-slate-900 mb-5">Связь</h4>
+                <ul class="space-y-4">
+                    <li><span class="font-['Inter'] text-sm text-slate-500 select-text break-all cursor-default block leading-relaxed">darkysik@LIVE RP.ru</span></li>
+                    <li><span class="font-['Inter'] text-sm text-slate-500 select-text cursor-default block leading-relaxed">+1 (234) 567-89-10</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="col-span-1 md:col-span-3">
+            <h4 class="text-sm font-bold text-slate-900 mb-5">Соцсети</h4>
+            <div class="flex flex-wrap gap-4">
+                <a class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-[#5865F2] transition-colors group no-underline hover:no-underline" href="https://discord.gg/mVMKVqqRDc" target="_blank" rel="noopener noreferrer" title="Discord" aria-label="Discord">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-slate-600 group-hover:text-white" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                    </svg>
+                </a>
+                <a class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center hover:bg-[#FF0000] transition-colors group no-underline hover:no-underline" href="https://www.youtube.com/@LIVE RPldps" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-slate-600 group-hover:text-white" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.052-.072 1.972l-.008.104-.022.261-.01.104c-.048.519-.119 1.023-.22 1.402a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c1.16-.312 5.569-.334 6.18-.335h.142ZM6.5 10.5 10.5 8 6.5 5.5v5z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-8 mt-10 pt-8 border-t border-slate-200/50">
+        <div class="text-center max-w-3xl mx-auto">
+            <p class="font-['Inter'] text-sm text-slate-500 mb-2">© 2026 Российская Партия Развития (РПР)</p>
+            <p class="font-['Inter'] text-xs text-slate-400 mb-4">Данный сайт не является реальным политическим ресурсом и создан исключительно для игрового проекта LIVE RP.</p>
+            <p class="font-['Inter'] text-xs text-slate-400">v 3 (Special version 14.08.2026)</p>
+        </div>
+    </div>
+</footer>
+
+<script nonce="732e0a311ce7cf79cf1c3072be07b844">
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+        const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+        mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+        
+        if (isExpanded) {
+            mobileMenu.classList.add('-translate-y-4', 'opacity-0', 'invisible');
+            mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'visible');
+            mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-on-surface">menu</span>';
+        } else {
+            mobileMenu.classList.remove('-translate-y-4', 'opacity-0', 'invisible');
+            mobileMenu.classList.add('translate-y-0', 'opacity-100', 'visible');
+            mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-on-surface">close</span>';
+        }
+    });
+}
+
+function closeMobileMenu() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.add('-translate-y-4', 'opacity-0', 'invisible');
+        mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'visible');
+        mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-on-surface">menu</span>';
+    }
+}
+
+</script>
+<script nonce="732e0a311ce7cf79cf1c3072be07b844" src="assets/js/nav.js" defer></script></body>
+</html>
